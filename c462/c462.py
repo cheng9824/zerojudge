@@ -1,3 +1,4 @@
+# one
 k = int(input())
 a = input()
 uorl = []
@@ -30,3 +31,31 @@ while le < m:
     if t > longest: longest = t
     le = ri
 print(longest)
+
+# two
+"""
+def isupper(c):
+    if c >= 'A' and c <= 'Z':
+        return 1
+    return 0
+k = int(input())
+a = input()
+uorl = -1
+current = 0
+seg = 0
+ans = 0
+for c in a:
+    state = isupper(c)
+    if state == uorl:
+        current += 1
+    else:
+        uorl = state
+        if current < k:
+            seg = 0
+        current = 1
+    if current == k:
+        seg += k
+        current = k
+    ans = max(ans, seg)
+print(ans)
+"""
